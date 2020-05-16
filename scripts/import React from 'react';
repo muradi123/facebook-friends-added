@@ -1,0 +1,89 @@
+import React from 'react';
+import logo from './earth.png';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+      <div className="logo-container">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p className="Header-title">
+        SAVE EARTH
+        </p>
+        </div>
+        <ul className="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        </ul>
+        
+       </header>
+    </div>
+  );
+}
+
+export default App;
+....
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  padding:1vh 0;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: rgb(60,116,58);
+background: linear-gradient(90deg, rgba(60,116,58,1) 0%, rgba(146,200,147,1) 100%);
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding:0 5vh;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+.logo-container{
+  display: flex;
+}
+.Header-title{
+  padding:0 3vh;
+  color:  #333740;
+  font-weight: bold;
+  text-shadow: 2px 2px #939384;
+}
+.App-link {
+  color: #61dafb;
+}
+.menu{
+  display: flex;
+  
+}
+.menu li{
+   color:#333740;
+   list-style-type: none;
+   padding: 0 2vh;
+   font-weight: bold;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
